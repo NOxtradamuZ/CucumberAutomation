@@ -1,0 +1,33 @@
+package stepDefinitions;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class StepDefinition {
+
+	@Given("^User is on Netbanking landing page$")
+	public void user_is_on_netbanking_landing_page() {
+		System.out.println("User is on Landing page");
+	}
+	
+	@When("User login into application with {string} username and {string} password")
+	public void user_login_into_application_with_username_and_password(String userName, String password) {
+		System.out.println("User login into the application with "
+				+ userName + 
+				" username and"
+				+ password 
+				+ " password");
+	}
+	
+	@Then("^Home page is populated$")
+	public void home_page_is_populated() {
+		System.out.println("Home page is populated");
+	}
+	
+	@Then("^Cards are displayed$")
+	public void cards_are_displayed() {
+		System.out.println("Cards are displayed");
+	}
+	
+}

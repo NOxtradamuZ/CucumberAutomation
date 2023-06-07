@@ -1,0 +1,14 @@
+content_assist_favorite_static_members=org.testng.Assert.*;org.junit.Assert.*;org.junit.Assume.*;org.junit.jupiter.api.Assertions.*;org.junit.jupiter.api.Assumptions.*;org.junit.jupiter.api.DynamicContainer.*;org.junit.jupiter.api.DynamicTest.*;org.mockito.ArgumentMatchers.*;org.mockito.Mockito.*;org.assertj.core.api.Assertions.*
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="org.openqa.selenium.SearchContext"><rhs name\="org.openqa.selenium.chrome.ChromeDriver"/></lhs><lhs name\="org.openqa.selenium.WebDriver"><rhs name\="org.openqa.selenium.chrome.ChromeDriver"/></lhs><lhs name\="org.openqa.selenium.support.ui.FluentWait"><rhs name\="org.openqa.selenium.support.ui.WebDriverWait"/></lhs><lhs name\="org.openqa.selenium.support.ui.Wait"><rhs name\="org.openqa.selenium.support.ui.WebDriverWait"/></lhs><lhs name\="org.openqa.selenium.support.ui.WebDriverWait"><rhs name\="org.openqa.selenium.support.ui.WebDriverWait"/></lhs><lhs name\="java.time.temporal.TemporalAmount"><rhs name\="java.time.Duration"/></lhs><lhs name\="pageObjects.LandingPage"><rhs name\="pageObjects.LandingPage"/></lhs><lhs name\="pageObjects.OffersPage"><rhs name\="pageObjects.OffersPage"/></lhs><lhs name\="pageObjects.PageObjectManager"><rhs name\="pageObjects.PageObjectManager"/></lhs><lhs name\="utils.GenericUtils"><rhs name\="utils.GenericUtils"/></lhs><lhs name\="utils.TestBase"><rhs name\="utils.TestBase"/></lhs><lhs name\="java.io.InputStream"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="java.io.FileInputStream"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="pageObjects.CheckoutPage"><rhs name\="pageObjects.CheckoutPage"/></lhs></history>
+content_assist_number_of_computers=12
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=22
+spelling_locale=en_GB
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

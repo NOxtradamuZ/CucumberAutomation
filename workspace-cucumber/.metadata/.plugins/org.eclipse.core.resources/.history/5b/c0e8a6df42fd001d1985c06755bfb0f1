@@ -1,0 +1,13 @@
+package stepDefinitions;
+
+import utils.TestContextSetUp;
+
+public class CheckoutPageStepDefinitions {
+	
+	TestContextSetUp contextSetUp;
+	
+	public CheckoutPageStepDefinitions(TestContextSetUp contexSetUp) {
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+Feature: Place the order for the products
+
+  Scenario Outline: Search Experience for product search in both Home and Offers page
+    Given useris on Greencart landing page
+    When user searched with shortname <Name> and extracted the actual name of product
+    And added "3" items of the selected product to cart
+    Then user proceeds to checkout and validate the <Name> items in checkout page
+		And verify user has ability to enter promo code and place the order
+    
+  Examples:
+		| Name |
+		| Tom  |

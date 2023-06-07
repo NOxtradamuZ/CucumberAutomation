@@ -1,0 +1,18 @@
+package stepDefinitions;
+
+import utils.TestContextSetUp;
+
+public class CheckoutPageStepDefinitions {
+	
+	TestContextSetUp contextSetUp;
+	
+	public CheckoutPageStepDefinitions(TestContextSetUp contexSetUp) {
+		this.contextSetUp = contexSetUp;
+	}
+	
+	@Then("^verify user has ability to enter promo code and place the order$")
+	public void verify_user_has_ability_to_enter_promo_code_and_place_the_order() {
+		
+	}
+
+}

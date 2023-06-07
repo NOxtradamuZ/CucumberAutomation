@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.318" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Application Login" name="Home page default login" time="0.051">
+<system-out><![CDATA[
+Given validate the browser..................................................passed
+When Browser is triggered...................................................passed
+Then check if browser is started............................................passed
+Given User is on Netbanking landing page....................................passed
+When User login into application with "jhon" username and "4321" password...passed
+Then Home page is populated.................................................passed
+And Cards displayed are "false".............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

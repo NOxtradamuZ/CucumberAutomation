@@ -1,0 +1,49 @@
+Feature: Application Login
+
+Background:
+Given validate the browser
+When Browser is triggered
+Then check if browser is started
+
+@RegTest @SmokeTest
+Scenario: Home page default login
+Given User is on Netbanking landing page
+When User login into application with "jin" username and "1234" password
+Then Home page is populated
+And Cards displayed are "true"
+
+@PortalTest
+Scenario: Home page default login
+Given User is on Netbanking landing page
+When User login into application with "jhon" username and "4321" password
+Then Home page is populated
+And Cards displayed are "false"
+
+@MobileTest
+Scenario: Home page default login
+Given User is on Netbanking landing page
+When User login into application with "jhon" username and "4321" password
+Then Home page is populated
+And Cards displayed are "false"
+
+@WebTest @RegTest
+Scenario: Home page default login
+Given User is on Netbanking landing page
+When User sign up with the following details
+| jenny | abcd | john@abcd.com | Australia | 3242353 |
+Then Home page is populated
+And Cards displayed are "false"
+
+@SanityTest
+Scenario Outline: Home page default login
+Given User is on Netbanking landing page
+When User login in the application with <Username> and <Password>
+Then Home page is populated
+And Cards displayed are "false"
+
+Examples:
+| Username | Password |
+| user1    | pass1    |
+| user2    | pass2    |
+| user3    | pass3    |
+| user4    | pass4    |

@@ -1,0 +1,59 @@
+package utils;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.time.Duration;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class TestBase {
+	
+	// Attributes
+	public WebDriver driver;
+	
+	public WebDriver webDriverManager() throws IOException {
+		System.out.println(System.getProperty("user.dir"));
+		
+		/** We convert the properties in a FileInputStream before sending to the properties */
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + 
+				"//src//test//resources//global.properties"
+				);
+		
+		Properties prop = new Properties();
+		prop.load(fis);
+		
+		/** Get the properties from the file */
+		String browser = (String) prop.get("browser");
+		String url = prop.getProperty("QAUrl");
+		
+		if (driver == null) {
+			if(browser.equalsIgnoreCase("chrome")) {
+				System.setProperty(
+						"webdriver.chrome.driver",
+						System.getProperty("user.dir") +
+						"//src//test//resources//chromedriver.exe"
+						);
+				
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--remote-allow-origins=*");
+				driver = new ChromeDriver(options);
+				driver.get(url);
+				
+			} else if(browser.equals("firefox")) {
+				// firefox instantiation here
+			}
+			
+		}
+
+		return driver;
+	}
+	
+	public void wait() {
+		return driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	}
+
+}

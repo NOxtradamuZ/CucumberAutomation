@@ -1,0 +1,36 @@
+package stepDefinitions;
+
+import org.testng.Assert;
+
+import io.cucumber.java.en.Then;
+import pageObjects.CheckoutPage;
+import utils.TestContextSetUp;
+
+public class CheckoutPageStepDefinitions {
+	
+	// Attributes
+	public TestContextSetUp contextSetUp;
+	
+	/** Get the pages */
+	public CheckoutPage checkoutPage;
+	
+	/** Constructor to inject dependencies */
+	public CheckoutPageStepDefinitions(TestContextSetUp contexSetUp) {
+		this.contextSetUp = contexSetUp;
+		/** Get the page */
+		checkoutPage = contextSetUp.pageObjectManager.getCheckoutPage();
+	}
+	
+	/** Step definitions */
+	
+	@Then("^verify user has ability to enter promo code and place the order$")
+	public void verify_user_has_ability_to_enter_promo_code() {
+		
+		
+		/** Use the methods and validate these */
+		Assert.assertTrue(checkoutPage.verifyPromoBtnIsDisplayed()); 
+		Assert.assertTrue(checkoutPage.verifyPlaceOrderBtnIsDisplayed());
+		
+	}
+
+}

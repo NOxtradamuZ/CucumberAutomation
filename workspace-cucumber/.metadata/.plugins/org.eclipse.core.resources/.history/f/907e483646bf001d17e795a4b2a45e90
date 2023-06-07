@@ -1,0 +1,13 @@
+Feature: Application Login
+
+Scenario: Home page default login
+Given User is on Netbanking landing page
+When User login into application with "jin" username and "1234" password
+Then Home page is populated
+And Cards are displayed
+
+Scenario: Home page default login
+Given User is on Netbanking landing page
+When User login into application with "jhon" username and "4321" password
+Then Home page is populated
+And Cards are displayed
